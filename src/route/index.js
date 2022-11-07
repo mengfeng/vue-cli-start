@@ -2,7 +2,7 @@
  * @Author: alan_mf
  * @Date: 2022-11-07 11:13:53
  * @LastEditors: alan_mf
- * @LastEditTime: 2022-11-07 12:18:39
+ * @LastEditTime: 2022-11-07 16:11:15
  * @FilePath: /vue-cli-start/src/route/index.js
  * @Description: 
  * 
@@ -14,7 +14,8 @@ import food from '../pages/Food.vue'
 import banner from '../pages/Banner.vue'
 
 const routes = [
-  { path: "/", redirect: "/home" },
+  { path: "/", redirect: "/home" 
+},
   {
     path: "/home",
     name: "home",
@@ -26,7 +27,7 @@ const routes = [
     component: food
   },
   {
-    path: "/banner",
+        path: "/banner",
     name: "banner",
     component: banner
   }
@@ -37,4 +38,4 @@ const router = createRouter({
     routes: routes
   })
 
-  export default router;
+export default router;
